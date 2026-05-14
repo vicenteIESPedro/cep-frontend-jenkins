@@ -3,9 +3,12 @@ pipeline {
 
     stages {
         stage('inicial'){
-            sh 'ls -alh'
-            sh 'node --version'
-            sh 'npm --version'
+            steps {
+                sh 'ls -alh'
+                sh 'node --version'
+                sh 'npm --version'  
+            }
+         
         }
     }
 }
